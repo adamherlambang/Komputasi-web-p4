@@ -1,0 +1,101 @@
+/* Reset dan dasar styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e8f0fe; /* Warna latar belakang lebih cerah */
+    display: flex;
+    justify-content: flex-start; /* Menempatkan form di kiri */
+    align-items: flex-start; /* Menjaga form tetap di atas */
+    height: 100vh;
+    padding-left: 20px; /* Memberikan jarak kiri */
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 380px; /* Ukuran form lebih kecil */
+}
+
+h1 {
+    color: #ff6347; /* Warna judul menjadi oranye kemerahan */
+    text-align: left; /* Judul di kiri */
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.description {
+    color: #666; /* Warna deskripsi lebih lembut */
+    font-size: 14px;
+    text-align: left; /* Deskripsi di kiri */
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #f5f5f5; /* Warna latar belakang kotak lebih lembut */
+    padding: 18px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box label {
+    color: #333; /* Warna label lebih gelap */
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.box input,
+.box select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.box input:focus,
+.box select:focus {
+    border-color: #ff6347; /* Warna fokus menjadi oranye kemerahan */
+    outline: none;
+}
+
+button {
+    background-color: #ff6347; /* Warna tombol menjadi oranye kemerahan */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d9534f; /* Warna tombol saat hover menjadi lebih gelap */
+}
+
+/* Responsif untuk layar yang lebih kecil */
+@media (max-width: 500px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
